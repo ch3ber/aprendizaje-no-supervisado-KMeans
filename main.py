@@ -37,8 +37,8 @@ plt.xlim(-0.1, 1.15)
 plt.ylim(-0.1, 1.15)
 plt.show()
 
-kmeans=KMeans(n_clusters=4).fit(df.values)
-# kmeans = KMeans(n_clusters=3, random_state=42, n_init=10).fit(df.values)
+# kmeans=KMeans(n_clusters=4).fit(df.values)
+kmeans = KMeans(n_clusters=3, random_state=42, n_init=10).fit(df.values)
 
 #calculo del número de cluster(k) "metodo del codo"
 inercias=[]
